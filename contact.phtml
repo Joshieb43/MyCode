@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="myProjectCss.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+</head>
+
+<header class="wrapper clearfix">
+    <h1><a href="home.phtml">BANANA REPO</a> </h1>
+
+    <div id="banner">
+        <div id="logo"><a href="home.phtml"><img src="banana.jpg" width=250 height=150 lt="logo"></a></div>
+    </div>
+
+
+    <div id="cssmenu">
+        <ul>
+            <li class="current"><a href="home.phtml">Home</a></li>
+            <li><a href="shop.phtml">Shop</a></li>
+            <li><a href="contact.phtml">Contact</a></li>
+            <li><a href="about.phtml">About Bananas</a></li>
+        </ul>
+    </div>
+
+</header><!-- end header -->
+
+<br>
+
+<br>
+
+<br>
+<body>
+
+<h1>Contact Form</h1>
+
+
+<br>
+
+<br>
+
+<br>
+
+<div id="contactform" align="center">
+    <form style="align-self: center"  name="contactform" method="post" action="contact.php" >
+        <table width="450px"><tr>
+                <td valign="top">
+                    <label for="full_name">Full Name *</label>
+                </td>
+                <td valign="top">
+                    <input  type="text" name="full_name" maxlength="50" size="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td valign="top">
+                    <label for="address">Address </label>
+                </td>
+                <td valign="top">
+                    <input  type="text" name="address" maxlength="30" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <label for="telephone">Telephone Number *</label>
+                </td>
+                <td valign="top">
+                    <input  type="text" name="telephone" maxlength="30" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <label for="comments">Comments/Notes *</label>
+                </td>
+                <td valign="top">
+                    <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center">
+                    <input type="submit" value="Submit" width="700" height="500">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+<br>
+
+
+</div>
+
+
+<footer>
+    <div id="colophon" class="wrapper clearfix">
+        Author:Joshua Budimir
+        <a href="index.php">@BananaRepoLLC</a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+html {
+    text-align: center;
+}
+table {
+    border-collapse: 	collapse;
+}
+table, tr, td, th {
+    padding: 			10px;
+    border:				solid 1px black;
+    font-family: Arial;
+    font-size: xx-large;
+}
+tr {
+    vertical-align: 	top;
+}
+th {
+    background-color: 	black;
+    color: 				white;
+}
+tr:nth-child(odd)		{ background-color: #000066; }
+tr:nth-child(even)		{ background-color: #e68a00; }
+
+a{
+    font-family: Arial;
+    color: white;
+    font-size: xx-large;
+
+
+}
+#form1{
+
+
+    margin:  0 auto;
+
+    font-family: Arial;
+    font-size: large;
+    color: white;
+
+
+}
+#shopform{
+
+   align-content: center;
+}
+#shopform > td{
+
+    font-size: xx-small;
+    color: white;
+
+
+}
+#shopform > p {font-size: xx-small;}
+
+#list{
+
+    background-color: #000066;
+    font-family: Arial;
+    font-size: medium;
+text-align: left;
+color: white;
+
+
+}
+#list > ul > li { padding: 5px 0px; }
+
+#colophon{
+
+    position:fixed;
+    bottom:0;
+    left:0;
+    clear:both;
+    padding:1em;
+    background-color:#000066;
+    text-align:center;
+    font-size: small;
+    font-family: Arial;
+
+
+    /*color:  white;
+    alignment: bottom;
+    float: bottom;
+*/
+}
+#colophon > a{
+
+    font-size: x-small;
+
+}
+
+body{
+     margin: 0;
+    background-size: cover;
+    background-color: #3f1dd3;
+    font-family:		"Algerian";
+    font-size:           x-large;
+    color:  			white;
+
+}
+
+h1,h2{
+
+
+    margin:				0;
+    font-weight:		500;
+ font-family: Arial;
+    color: white;
+}
+
+p{
+    line-height:		1.2;
+}
+
+header{
+
+    background: #000066;
+
+    font-family: "Arial Black";
+    font-color: 	white;
+    text-align:				center;
+    padding:				1em;
+}
+
+nav{
+    margin:1em 0 0 2em;
+}
+
+section{
+    margin:1em 0 0 2em;
+}
+h2{
+    font-family: Arial;
+    color: white;
+
+}
+
+
+@media only screen /*--wide screen-*/
+and (min-device-width: 480px)
+and (min-width: 700px)
+{
+    section{
+        float:left;
+        width:70%;
+    }
+    nav{
+        float:left;
+        width:15%;
+    }
+}
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+#cssmenu {
+    width: auto;
+    border-bottom: 3px solid #47c9af;
+    font-family: Raleway, sans-serif;
+    line-height: 1;
+    background-color: #000066;
+
+}
+#cssmenu ul {
+    background: #e68a00;
+}
+#cssmenu > ul > li {
+    float: left;
+}
+#cssmenu.align-center > ul {
+    font-size: 0;
+    text-align: center;
+}
+#cssmenu.align-center > ul > li {
+    display: inline-block;
+    float: none;
+}
+#cssmenu.align-right > ul > li {
+    float: right;
+}
+#cssmenu.align-right > ul > li > a {
+    margin-right: 0;
+    margin-left: -4px;
+}
+#cssmenu > ul > li > a {
+
+    font-family: Arial;
+    color: white;
+    z-index: 2;
+    padding: 18px 25px 12px 25px;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    margin-right: -4px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+    color: #444444;
+}
+#cssmenu > ul > li > a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 120%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    content: "";
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transform: perspective(5px) rotateX(2deg);
+    -webkit-transform-origin: bottom;
+    -moz-transform: perspective(5px) rotateX(2deg);
+    -moz-transform-origin: bottom;
+    transform: perspective(5px) rotateX(2deg);
+    transform-origin: bottom;
+}
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+    background: #47c9af;
+}
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+img { max-width: 100%; }
+
+#contactform{
+
+    font-family: Algerian;
+    font-size: large;
+    color: white;
+
+
+}
+
